@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b182f89-d00b-42c8-9f00-6aa439b4d9bc" name="Default" comment="" />
+    <list default="true" id="9b182f89-d00b-42c8-9f00-6aa439b4d9bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/wholistic-services/lib/assets.php" afterPath="$PROJECT_DIR$/web/app/themes/wholistic-services/lib/assets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="nbs.dev.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
