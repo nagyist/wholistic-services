@@ -1,0 +1,34 @@
+.gform_body {
+  .gfield {
+    .form-group;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    .form-control;
+  }
+
+  textarea {
+    height: 8em;
+  }
+}
+.gform_footer .gform_button {
+  .btn;
+  .btn-primary;
+}
+
+// Have the error divs extend the bootstrap alert classes
+.gform_validation_error .validation_error {
+  .alert;
+  .alert-warning;
+}
+
+.gform_validation_error .validation_message {
+  color: #c74f26;
+  font-size: @font-size-small;
+}
+
+.gform_confirmation_wrapper .gform_confirmation_message {
+  .alert;
+  .alert-success;
+}

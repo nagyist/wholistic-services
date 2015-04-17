@@ -1,0 +1,83 @@
+// Hide the table for extra-small screens
+.schedule-table {
+  .hidden-xs
+}
+
+// Only show the schedule-list on small screens
+.schedule-list {
+  .visible-xs;
+}
+
+.schedule-list hr {
+  margin: @half-rhythm auto;
+}
+
+
+
+.schedule-table th {
+  // Divide the table into 8 equal columns
+  width: 12.5%;
+}
+
+// Stripe the table
+.schedule-table tbody tr:nth-child(even),
+.schedule-table thead tr {
+  background: #f8f8f8;
+}
+
+.schedule-table.table  {
+  border-collapse: separate !important;
+  border-spacing: 4px !important;
+  font-family: @headings-font-family;
+}
+
+// Style the time blocks.
+.schedule-table .schedule-day {
+  text-align: center;
+  font-weight: normal;
+}
+
+// Colors
+.schedule-table .has-class a {
+  color: @inverse-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.schedule-table .gentle-yoga {
+  background: #509560;
+  &:hover {
+    background: #7cb088;
+  }
+}
+
+.schedule-table .moderate-yoga {
+  background: #6147b2;
+  &:hover {
+    background: #816cc1;
+  }
+}
+
+.schedule-table .ashtanga-yoga {
+  background: #8b3c3e;
+  &:hover {
+    background: #a86d6e;
+  }
+}
+
+.schedule-table .chair-yoga {
+  background: #bba738;
+  &:hover {
+    background: #c8b960;
+  }
+}
+
+.schedule-table.table th, .schedule-table.table td {
+  border-top: none;
+  border-bottom: none;
+}
+
+td.alert-warning {
+  border: 3px solid red !important;
+  color: red !important;
+}

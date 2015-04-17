@@ -1,0 +1,73 @@
+.testeleven-carousel .carousel-inner .text {
+  .make-md-column(4);
+  padding-left: @rhythm * 3;
+  .hidden-sm; // For the moment we are hiding this text for small - fix that!
+}
+
+.testeleven-carousel img {
+  .make-sm-column(12);
+  .make-md-column(8);
+  max-width: 100%;
+  height: auto;
+  padding-right: @rhythm * 3;
+}
+
+// Add left padding to the image for small screens - there is no text area on them
+@media (min-width: @screen-sm-min) {
+  .testeleven-carousel img {
+    padding-left: @rhythm * 3;
+  }
+}
+
+// Get rid of the right image padding for medium and up
+@media (min-width: @screen-md-min) {
+  .testeleven-carousel img {
+    padding-left: 15px;
+  }
+}
+
+.carousel .carousel-control {
+  background-image: none;
+}
+
+.carousel .carousel-control .glyphicon-chevron-left {
+  left: @rhythm;
+}
+
+.carousel .carousel-control .glyphicon-chevron-right {
+  right: @rhythm;
+}
+
+.carousel .glyphicon {
+  color: #fff;
+}
+
+@media (min-width: @screen-sm-min) {
+  .carousel .glyphicon {
+    color: @text-color;
+  }
+}
+
+
+.carousel-indicators {
+  left: 50%;
+}
+
+@media (min-width: @screen-md-min) {
+  .carousel-indicators {
+    left: 66%;
+  }
+}
+
+.image-panel h3 {
+  margin-top: 0;
+}
+
+.image-panel p {
+  margin-bottom: 0;
+}
+
+.image-panel {
+  .clearfix;
+  position: relative;
+}

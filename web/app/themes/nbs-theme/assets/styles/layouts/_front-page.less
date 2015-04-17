@@ -1,0 +1,86 @@
+// I originally set this up to center the carousel in a 100% height div.
+// The markup in 'base-front-page.php' reflects that.
+// It's a good idea, but needs more work before it can be used in production.
+@media (min-width: @screen-md-min) {
+  // Set min height for text to keep it from bumping content below.
+  .testeleven-carousel .carousel-inner .text {
+    min-height: 364px !important;
+  }
+}
+
+.testeleven-carousel {
+  margin-top: @rhythm;
+  margin-bottom: @rhythm;
+}
+
+.testeleven-carousel .text p,
+.testeleven-static-carousel .text p {
+  font-size: 22px;
+}
+
+.testeleven-carousel .text h3,
+.testeleven-static-carousel .text h3{
+//  font-size: @font-size-h2;
+//  font-weight: bold;
+}
+
+.testeleven-static-carousel {
+  margin: @rhythm auto;
+  .make-sm-column(12);
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.welcome, .qualifications {
+  h2 { font-size: @font-size-h1;}
+  h3 { font-size: @font-size-h2;}
+  h4 { font-size: @font-size-h3;}
+  h5 { font-size: @font-size-h4;}
+  p { font-size: 22px;}
+
+  img {
+    .make-xs-column(12);
+  }
+	
+  .full-width-heading {
+    .make-sm-column(12);
+    text-align: center;
+  }
+  .positioned_full {
+    .make-sm-column(8);
+    .make-sm-column-offset(2);
+    text-align: center;
+  }
+  img {
+    .make-sm-column(4);
+    .make-sm-column-offset(4);
+  }
+}
+
+.welcome h2 {
+  font-weight: bold;
+}
+
+.welcome {
+  background: @brand-primary;
+  color: @inverse-color;
+  padding-bottom: @rhythm;
+}
+
+.welcome h3,
+.qualifications h3 {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.welcome img {
+  margin-bottom: @rhythm;
+}
+
+.qualifications {
+  background: @body-bg;
+  color: @text-color;
+  padding-bottom: @rhythm;
+}
