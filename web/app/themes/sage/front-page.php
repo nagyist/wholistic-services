@@ -3,7 +3,7 @@ use Testeleven\Positioned\TemplateTags;
 ?>
 
 <section class="intro-sideshow">
-
+  <?php get_template_part('templates/carousel'); ?>
 </section>
 
 <section class="welcome" id="welcome">
