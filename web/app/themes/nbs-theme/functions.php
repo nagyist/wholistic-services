@@ -20,7 +20,7 @@ $sage_includes = [
   'lib/nav.php',                   // Custom nav modifications
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
-	'lib/positioned.php',            // Adds positioned content to the theme
+//	'lib/positioned.php',            // Adds positioned content to the theme
 	'lib/headings.php',
 	'lib/testimonial.php',
 ];
