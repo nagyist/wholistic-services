@@ -19,9 +19,7 @@ $sage_includes = [
   'lib/titles.php',                // Page titles
   'lib/nav.php',                   // Custom nav modifications
   'lib/gallery.php',               // Custom [gallery] modifications
-  'lib/extras.php',               // Custom functions
-  'lib/gravity-forms.php',
-
+  'lib/extras.php',                // Custom functions
 ];
 
 foreach ($sage_includes as $file) {
