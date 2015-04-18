@@ -1,15 +1,17 @@
 @import "common/_variables";
-// How to get started using Sass instead of Less:
-//
-// 1  Remove Bootstrap for Less: `bower uninstall bootstrap --save`
-// 2. Install Bootstrap for Sass: `bower install bootstrap-sass-official --save`
-// 3. Rename this file to `main.scss` and remove `main.less`
-// 4. Rename `editor-style.less` to `editor-style.scss`
-// 5. Update the `assets/manifest.json` styles dependencies from `.less` to `.scss`
-// 6. Change variables from Less to Sass (https://discourse.roots.io/t/regarding-the-grid-help-translating-less-to-sass/3253)
-//
-// Feel free to remove this file if you're using Less
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+@import "common/_global";
+@import "components/_buttons";
+@import "components/_comments";
+@import "components/_forms";
+@import "components/_grid";
+@import "components/_wp-classes";
+@import "layouts/_header";
+@import "layouts/_sidebar";
+@import "layouts/_footer";
+@import "layouts/_pages";
+@import "layouts/_posts";
