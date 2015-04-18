@@ -1,0 +1,111 @@
+.banner {
+  position: relative;
+  font-family: $font-family-sans-serif;
+  color: $inverse-color;
+  a {
+    color: $inverse-color;
+    font-size: 18px;
+  }
+}
+
+// Site logo
+.banner .site-logo {
+  @include make-sm-column(2);
+}
+.banner .site-logo img {
+  margin-top: $half-rhythm;
+}
+
+@media (min-width: $screen-sm-min) {
+  .banner .site-logo {
+    margin-top: -$rhythm;
+    margin-bottom: $half-rhythm;
+  }
+}
+
+// Center the logo on mobile screens
+// Put this inside of a media query so that it doesn't flash centered on ie8
+@media (max-width: $screen-xs-max) {
+  .banner .site-logo img {
+    @include center-block;
+    float: none;
+    // pad out the right side to center it
+    padding-right: 12px;
+  }
+}
+
+// Secondary navigation
+.banner .header-secondary {
+  margin-top: $quarter-rhythm;
+  @include make-sm-column(12);
+  .secondary-navigation {
+    float: right;
+  }
+}
+
+.secondary-navigation ul {
+  margin-bottom: $quarter-rhythm;
+  line-height: 1;
+  list-style: none;
+  li {
+    display: inline-block;
+    border-right: 1px solid $inverse-color;
+    padding-right: $half-rhythm;
+    margin-right: $quarter-rhythm;
+  }
+  li:last-child {
+    border: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+
+// Button
+.navbar-header button {
+  float: none;
+  color: $inverse-color;
+  margin-top: $rhythm;
+}
+
+// Navbar
+.primary-nav-container {
+  clear: both;
+  width: 100%;
+  @include make-sm-column(12);
+  margin-top: 0;
+  margin-bottom: $half-rhythm;
+}
+
+.primary-nav-container ul{
+  width: 100%;
+  li  {
+    padding: $half-rhythm (1.5 * $rhythm);
+  }
+}
+
+.navbar-nav  li a {
+  padding: 0;
+  &:hover {
+    border-bottom: 2px solid;
+  }
+}
+.primary-nav-container .active a {
+  border-bottom: 2px solid;
+}
+
+// At 999px we want the navbar to move beside the logo
+@media (min-width: 999px) {
+  .banner .primary-nav-container {
+    clear: none;
+    @include make-sm-column(10);
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .banner .site-logo {
+    margin-top: -$rhythm;
+    margin-bottom: 20px;
+  }
+}/*/mediaquery*/
