@@ -9,3 +9,9 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+// remove padding from .container-fluid so we can easily create full-width bg color sections
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
