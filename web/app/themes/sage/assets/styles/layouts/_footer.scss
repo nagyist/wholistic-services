@@ -1,0 +1,36 @@
+.content-info {
+  font-size: $font-size-small;
+  // Create a 500px shadow to give the illusion of a sticky footer
+  box-shadow: 0 500px 0 500px $brand-primary;
+  background: $brand-primary;
+//  margin-top: @rhythm;
+  clear: both;
+  color: $inverse-color;
+  a {
+    color: $inverse-color;
+  }
+  .footer-1, .footer-2, .footer-3 {
+    @include make-sm-column(4);
+  }
+  
+  address {
+    margin-bottom: $half-rhythm;
+  }
+
+  h2 {
+    font-size: $font-size-h3;
+  }
+  h3 {
+    font-size: $font-size-h4;
+  }
+  h4 {
+    font-size: $font-size-h5;
+  }
+}
+
+
+.testeleven {
+  @include make-sm-column(12);
+  font-size: 14px;
+  text-align: right;
+}

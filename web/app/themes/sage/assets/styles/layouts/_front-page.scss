@@ -40,6 +40,12 @@
   }
 }
 
+// remove padding from .container-fluid so we can easily create full-width bg color sections
+.home .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .welcome h2 {
   font-weight: bold;
 }
