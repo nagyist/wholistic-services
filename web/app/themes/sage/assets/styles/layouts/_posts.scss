@@ -1,0 +1,28 @@
+// Post archives
+.archive .main {
+  .page-header {
+    @include make-sm-column(12);
+  }
+  .entry-summary,
+  .entry-title {
+    @include make-sm-column(8);
+  }
+  .featured-image {
+    @include make-sm-column(4);
+  }
+  padding-bottom: $rhythm;
+}
+
+.single .main {
+  @include make-sm-column(8);
+  @include make-sm-column-offset(2);
+}
+
+.page-header {
+  border-bottom: 4px solid $gray;
+}
+
+// Single post pricing tables
+.table.table-striped td {
+  border: none;
+}
