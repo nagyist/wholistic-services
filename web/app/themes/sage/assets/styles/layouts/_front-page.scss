@@ -41,7 +41,8 @@
 }
 
 // remove padding from .container-fluid so we can easily create full-width bg color sections
-.home .container-fluid {
+.home .container-fluid,
+.home .container-fluid .main {
   padding-left: 0;
   padding-right: 0;
 }
@@ -71,4 +72,5 @@
   background: $body-bg;
   color: $text-color;
   padding-bottom: $rhythm;
+  @include clearfix;
 }

@@ -183,9 +183,9 @@ function wrap_with_heading_level($str, $level = 2) {
 
 function conditional_edit_link() {
 	?>
-	<?php if (!is_preview()) : ?>
-		<div class="edit-post"><?php edit_post_link(); ?></div>
-	<?php endif; ?>
+<!--	--><?php //if (!is_preview()) : ?>
+<!--		<div class="edit-post">--><?php //edit_post_link(); ?><!--</div>-->
+<!--	--><?php //endif; ?>
 <?php
 }
 
