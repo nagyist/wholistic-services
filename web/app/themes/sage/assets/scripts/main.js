@@ -42,6 +42,18 @@
       init: function() {
         // JavaScript to be fired on the about us page
       }
+    },
+    'schedule': {
+      init: function() {
+        // Make the whole schedule entry clickable - not just the link.
+        $('.has-class').css({'cursor': 'pointer'}).click(function() {
+          window.location.href = $(this).find('a:first').attr('href');
+        });
+        $('[data-toggle="tooltip"]').tooltip();
+      },
+      finalize: function() {
+
+      }
     }
   };
 

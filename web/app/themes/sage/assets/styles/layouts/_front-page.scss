@@ -40,21 +40,15 @@
   }
 }
 
-// remove padding from .container-fluid so we can easily create full-width bg color sections
-.home .container-fluid,
-.home .container-fluid .main {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .welcome h2 {
   font-weight: bold;
+  margin-top: 0;
 }
 
 .welcome {
   background: $brand-primary;
   color: $inverse-color;
-  padding-bottom: $rhythm;
+//  padding-bottom: $rhythm;
   @include clearfix;
 }
 
@@ -73,4 +67,8 @@
   color: $text-color;
   padding-bottom: $rhythm;
   @include clearfix;
+}
+
+.qualifications h3 {
+  margin-top: $half-rhythm;
 }
