@@ -1,0 +1,23 @@
+.sidebar {
+  font-size: $font-size-small;
+  // todo Adjust this for mobile
+  margin-bottom: $rhythm;
+  margin-top: $rhythm;
+  h2 {
+    font-size: $font-size-h3;
+  }
+  h3 {
+    font-size: $font-size-h4;
+  }
+  h4 {
+    font-size: $font-size-h5;
+  }
+
+  .entry-title {
+    margin-top: 0;
+  }
+
+  img {
+    margin-bottom: $quarter-rhythm;
+  }
+}
