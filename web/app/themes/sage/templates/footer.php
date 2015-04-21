@@ -13,11 +13,13 @@ use Testeleven\Positioned\TemplateTags;
 		  </div>
 		  <div class="footer-3">
 			  <?php TemplateTags\post_in_position('footer-site-info', 'positioned_full', 3); ?>
-			  <?php dynamic_sidebar('sidebar-footer'); ?>
 			  <?php if (has_nav_menu('footer_navigation')) : ?>
 				  <?php wp_nav_menu(['theme_location' => 'footer_navigation']); ?>
 			  <?php endif; ?>
 		  </div>
+      <div class="footer-4">
+        <?php dynamic_sidebar('sidebar-footer'); ?>
+      </div>
 		  <div class="testeleven">
 			  &copy; 2014-<?php echo date("Y"); ?> testeleven web development
 		  </div>

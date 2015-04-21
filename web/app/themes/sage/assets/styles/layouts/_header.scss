@@ -8,11 +8,11 @@
   }
 
   .btn {
-    background: $link-color;
+    background: #500708;
     color: $inverse-color;
     border: none;
     &:hover {
-      background: lighten($link-color, 10%);
+      background: lighten(#500708, 10%);
     }
   }
 }

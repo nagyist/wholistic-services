@@ -9,8 +9,8 @@
   a {
     color: $inverse-color;
   }
-  .footer-1, .footer-2, .footer-3 {
-    @include make-sm-column(4);
+  .footer-1, .footer-2, .footer-3, .footer-4 {
+    @include make-sm-column(3);
   }
   
   address {
@@ -22,9 +22,21 @@
   }
   h3 {
     font-size: $font-size-h4;
+    margin-bottom: $quarter-rhythm;
   }
   h4 {
     font-size: $font-size-h5;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: #ffffff;
+      }
+    }
   }
 }
 
