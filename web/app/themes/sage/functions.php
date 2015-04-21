@@ -22,6 +22,7 @@ $sage_includes = [
   'lib/extras.php',                // Custom functions
   'lib/positioned.php',            // Positioned content
   'lib/headings.php',
+  'lib/gravity-forms.php',
 ];
 
 foreach ($sage_includes as $file) {

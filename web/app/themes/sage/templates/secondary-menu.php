@@ -4,6 +4,6 @@
 	<?php endif; ?>
 
 	<li>
-		<a href="#" class="btn btn-default">Contact Us</a>
+		<a href="/contact" class="btn btn-default">Contact Us</a>
 	</li>
 </ul>
