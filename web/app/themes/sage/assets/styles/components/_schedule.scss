@@ -52,9 +52,9 @@
 }
 
 .schedule-table .moderate-yoga {
-  background: #6147b2;
+  background: #4779B2;
   &:hover {
-    background: #816cc1;
+    background: lighten(#4779B2, 5%);
   }
 }
 

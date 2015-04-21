@@ -102,14 +102,21 @@
   }
 }
 
-.navbar-nav  li a {
-  padding: 0;
-  &:hover {
+// Set line height to 1 to make a nice underline.
+.navbar-nav li a {
+  line-height: 1;
+}
+// Underline a:hover and li.active on small+ screens.
+@media (min-width: $screen-sm-min) {
+  .navbar-nav  li a {
+    padding: 0;
+    &:hover {
+      border-bottom: 2px solid;
+    }
+  }
+  .primary-nav-container .active a {
     border-bottom: 2px solid;
   }
-}
-.primary-nav-container .active a {
-  border-bottom: 2px solid;
 }
 
 // At 999px we want the navbar to move beside the logo
@@ -117,7 +124,7 @@
   .banner .primary-nav-container {
     clear: none;
     @include make-sm-column(10);
-    margin-top: 9px;
+    margin-top: 16px;
     margin-bottom: 0;
   }
   .banner .site-logo {
