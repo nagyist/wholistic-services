@@ -1,7 +1,6 @@
 <?php
 namespace Testeleven\WholisticServices\GForm;
 ?>
-
 <?php
 
 // Allow us to load jQuery in the footer with Gravity Forms
