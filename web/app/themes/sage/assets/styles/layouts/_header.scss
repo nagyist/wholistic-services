@@ -6,6 +6,20 @@
     color: $inverse-color;
     font-size: 18px;
   }
+
+  .btn {
+    background: $link-color;
+    color: $inverse-color;
+    border: none;
+    &:hover {
+      background: lighten($link-color, 10%);
+    }
+  }
+}
+
+// Mock the active class for the contact button
+.contact .banner .btn {
+  background: lighten($link-color, 10%);
 }
 
 // Site logo
@@ -17,8 +31,10 @@
 }
 
 @media (min-width: $screen-sm-min) {
+  .banner .site-logo  img{
+    margin-top: 0;
+  }
   .banner .site-logo {
-    margin-top: -$rhythm;
     margin-bottom: $half-rhythm;
   }
 }
@@ -101,7 +117,7 @@
   .banner .primary-nav-container {
     clear: none;
     @include make-sm-column(10);
-    margin-top: 30px;
+    margin-top: 9px;
     margin-bottom: 0;
   }
   .banner .site-logo {

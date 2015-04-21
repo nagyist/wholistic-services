@@ -1,5 +1,7 @@
 // Post archives
 .archive .main {
+  @include make-sm-column(8);
+  @include make-sm-column-offset(2);
   .page-header {
     @include make-sm-column(12);
   }
@@ -25,4 +27,8 @@
 // Single post pricing tables
 .table.table-striped td {
   border: none;
+}
+
+.single .gform_wrapper {
+  margin-bottom: $rhythm;
 }
