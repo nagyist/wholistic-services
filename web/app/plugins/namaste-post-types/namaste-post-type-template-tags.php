@@ -11,12 +11,12 @@ function display_workshops($limit = 1, $heading_level = 2) {
 	?>
 	<?php if ($query->have_posts()) : ?>
 		<div class="workshops">
-			<header class="section-header">
-				<?php $top_heading_level = $heading_level - 1; ?>
-				<?php wrap_section_with_heading_level('Workshops at Namaste Bodywork Studio', $top_heading_level); ?>
-			</header>
+<!--			<header class="section-header">-->
+<!--				--><?php //$top_heading_level = $heading_level - 1; ?>
+<!--				--><?php //wrap_section_with_heading_level('Workshops at Namaste Bodywork Studio', $top_heading_level); ?>
+<!--			</header>-->
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
-				<article <?php post_class('editable'); ?>>
+				<article <?php post_class(array('editable', 'highlight-box')); ?>>
 					<?php if (has_post_thumbnail()) : ?>
 						<div class="featured-image">
 							<?php the_post_thumbnail(); ?>
@@ -62,7 +62,7 @@ function display_notifications($heading_level = 2) {
 	$query = new \WP_Query($args);
 	?>
 	<?php if ($query->have_posts()) : ?>
-		<div class="site-notice alert alert-warning">
+		<div class="site-notice alert alert-warning highlight-box">
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
 				<header>
 					<?php $title = get_the_title(); ?>
@@ -87,9 +87,9 @@ function display_videos($heading_level = 3, $limit = 3) {
 	?>
 	<?php if ($query->have_posts()) : ?>
 		<div class="videos">
-			<header>
-				<?php wrap_section_with_heading_level('Andrea\'s videos', $heading_level - 1); ?>
-			</header>
+<!--			<header>-->
+<!--				--><?php //wrap_section_with_heading_level('Andrea\'s videos', $heading_level - 1); ?>
+<!--			</header>-->
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
 				<?php $video_id = get_field('video_id'); ?>
 				<?php $video_url = "http://www.youtube.com/embed/{$video_id}/?enablejsapi=1"; ?>
@@ -98,11 +98,13 @@ function display_videos($heading_level = 3, $limit = 3) {
 				<?php $title = get_the_title(); ?>
 
 				<!-- List videos -->
+        <div class="highlight-box">
 				<a class="modal-video" data-toggle="modal" data-target="#<?php echo $post_id; ?>"
 				   data-src="<?php echo $video_url; ?>" href="#">
 					<?php wrap_entry_with_heading_level($title, $heading_level); ?>
 					<img src="http://img.youtube.com/vi/<?php echo $video_id; ?>/mqdefault.jpg" alt="<?php echo $title; ?>"/>
 				</a>
+        </div>
 
 				<!-- The modal -->
 				<div class="modal fade" tabindex="-1" role="dialog" id="<?php echo $post_id; ?>"
@@ -142,7 +144,7 @@ function display_testimonials($limit = 3) {
 	<?php if ($query->have_posts()) : ?>
 		<div class="testimonials">
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
-				<article <?php post_class('editable'); ?>>
+				<article <?php post_class(array('editable', 'highlight-box')); ?>>
 				  <?php the_content(); ?>
 					<footer>
 						<?php $post_date = get_the_date(); ?>
@@ -155,6 +157,35 @@ function display_testimonials($limit = 3) {
 	<?php endif; ?>
 <?php
 	wp_reset_postdata();
+}
+
+function display_posts($heading_level = 3, $limit = 3) {
+  $args = array(
+    'post_type' => 'post',
+    'posts_per_page' => $limit,
+  );
+  $query = new \WP_Query($args);
+  ?>
+  <?php if ($query->have_posts()) : ?>
+    <?php while ($query->have_posts()) : $query->the_post(); ?>
+      <article <?php post_class(array('editable', 'highlight-box')); ?> >
+        <header>
+         <?php $title = get_the_title(); ?>
+         <?php wrap_entry_with_heading_level($title, $heading_level); ?>
+        </header>
+        <?php if (has_post_thumbnail()) : ?>
+          <div class="featured-image">
+            <?php the_post_thumbnail(); ?>
+          </div>
+        <?php endif; ?>
+        <div class="entry-content">
+          <?php the_excerpt(); ?>
+        </div>
+      </article>
+    <?php endwhile?>
+  <?php endif; ?>
+<?php
+  wp_reset_postdata();
 }
 
 // Wrap a string in a chosen heading level
