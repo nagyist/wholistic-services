@@ -68,3 +68,10 @@
   @include clearfix;
   position: relative;
 }
+
+.testeleven-static-carousel {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

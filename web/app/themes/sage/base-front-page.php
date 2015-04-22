@@ -25,7 +25,8 @@ get_template_part('templates/header');
 </div>
 <div class="wrap container">
   <div class="content row">
-    <div id="highlights">
+    <div id="highlights" class="highlights">
+      <h2>Welcome to Namaste Bodywork Studio</h2>
       <?php TemplateTags\display_notifications(3); ?>
       <?php TemplateTags\display_workshops(3, 3); ?>
       <?php TemplateTags\display_videos(); ?>

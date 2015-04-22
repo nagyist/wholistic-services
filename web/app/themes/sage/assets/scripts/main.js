@@ -52,12 +52,15 @@
     // Home page
     'home': {
       init: function() {
-        // Initialize masonry
-        //var highlights = $('#highlights');
-        //var msnry = new Masonry(highlights, {
-        //  columnWidth: 200,
-        //  itemSelector: '.highlight-box'
-        //});
+        // JavaScript to be fired on the home page
+        var $highlights = $('#highlights .highlight-box .wrap');
+        var color_classes = ['red', 'orange', 'yellow', 'green', 'blue', 'violet'];
+        var color_len = color_classes.length;
+        $highlights.each(function(index) {
+          //var choice = Math.floor(Math.random() * color_len);
+          var chosen_color = color_classes[index % color_len];
+          $(this).addClass(chosen_color);
+        });
 
       },
       finalize: function() {

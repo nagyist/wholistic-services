@@ -17,7 +17,7 @@ function display_workshops($limit = 1, $heading_level = 2) {
 <!--			</header>-->
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
 				<article <?php post_class(array('editable', 'highlight-box')); ?>>
-
+          <div class="wrap">
 					<?php if (has_post_thumbnail()) : ?>
 						<div class="featured-image">
 							<?php the_post_thumbnail(); ?>
@@ -47,6 +47,7 @@ function display_workshops($limit = 1, $heading_level = 2) {
           <div class="excerpt">
 	          <?php the_excerpt(); ?>
           </div>
+            </div>
 				</article>
 			<?php endwhile; ?>
 		</div>
@@ -63,7 +64,8 @@ function display_notifications($heading_level = 2) {
 	$query = new \WP_Query($args);
 	?>
 	<?php if ($query->have_posts()) : ?>
-		<div class="site-notice alert alert-warning highlight-box">
+		<div class="site-notice highlight-box">
+      <div class="wrap">
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
 				<header>
 					<?php $title = get_the_title(); ?>
@@ -73,6 +75,7 @@ function display_notifications($heading_level = 2) {
 			<article <?php post_class('site-notice'); ?>>
 				<?php the_content(); ?>
 			</article>
+        </div>
 		</div>
 	<?php endif; ?>
 <?php
@@ -100,11 +103,13 @@ function display_videos($heading_level = 3, $limit = 3) {
 
 				<!-- List videos -->
         <div class="highlight-box">
+          <div class="wrap">
 				<a class="modal-video" data-toggle="modal" data-target="#<?php echo $post_id; ?>"
 				   data-src="<?php echo $video_url; ?>" href="#">
 					<?php wrap_entry_with_heading_level($title, $heading_level); ?>
 					<img src="http://img.youtube.com/vi/<?php echo $video_id; ?>/mqdefault.jpg" alt="<?php echo $title; ?>"/>
 				</a>
+            </div>
         </div>
 
 				<!-- The modal -->
@@ -146,12 +151,14 @@ function display_testimonials($limit = 3) {
 		<div class="testimonials">
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
 				<article <?php post_class(array('editable', 'highlight-box')); ?>>
+          <div class="wrap">
 				  <?php the_content(); ?>
 					<footer>
 						<?php $post_date = get_the_date(); ?>
 						Submitted by: <?php the_title(); ?><br/>
 						On: <?php echo $post_date; ?>
 					</footer>
+            </div>
 				</article>
 			<?php endwhile; ?>
 		</div>
@@ -170,6 +177,7 @@ function display_posts($heading_level = 3, $limit = 3) {
   <?php if ($query->have_posts()) : ?>
     <?php while ($query->have_posts()) : $query->the_post(); ?>
       <article <?php post_class(array('editable', 'highlight-box')); ?> >
+        <div class="wrap">
         <header>
          <?php $title = get_the_title(); ?>
          <?php wrap_entry_with_heading_level($title, $heading_level); ?>
@@ -182,6 +190,7 @@ function display_posts($heading_level = 3, $limit = 3) {
         <div class="entry-content">
           <?php the_excerpt(); ?>
         </div>
+          </div>
       </article>
     <?php endwhile?>
   <?php endif; ?>

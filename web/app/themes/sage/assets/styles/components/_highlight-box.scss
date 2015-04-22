@@ -1,20 +1,89 @@
+$mute: 10%;
+
+$red: darken(#ff0000, $mute);
+$orange: darken(#ff6600, $mute);
+$yellow: darken(#ffcc00, $mute);
+$green: darken(#339933, $mute);
+$blue: darken(#2893c6, $mute);
+$violet: darken(#C628CC, $mute);
+
 #highlights {
   @include clearfix;
 }
+
 .highlight-box {
-  @include make-sm-column(4);
+  position: relative;
+  @include make-sm-column(6);
+  @include make-md-column(4);
   @include clearfix;
-  border: 1px solid;
-  padding: $half-rhythm;
-  margin-bottom: $half-rhythm;
-  border-radius: 7px;
-  font-size: $font-size-small;
-  height: 400px;
+  margin-bottom: $grid-gutter-width;
   h3 {
     font-size: $font-size-h4;
-    margin-top: 0; 
+    font-weight: bold;
+    margin-top: 0;
   }
   img {
+    width: 100%;
+    height: auto;
+  }
+  .wrap {
+    @include clearfix;
+    padding: $half-rhythm;
+    border-radius: 3px;
+  }
+
+  a {
+    color: $inverse-color;
+    text-decoration: underline;
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .red {
+    background: $red;
+    color: $inverse-color;
+  }
+
+  .orange {
+    background: $orange;
+    color: $inverse-color;
+  }
+
+  .yellow {
+    background: $yellow;
+    color: $inverse-color;
+  }
+
+  .green {
+    background: $green;
+    color: $inverse-color;
+  }
+
+  .blue {
+    background: $blue;
+    color: $inverse-color;
+  }
+
+  .violet {
+    background: $violet;
+    color: $inverse-color;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .highlight-box {
+    height: 400px;
+  }
+  .highlight-box .wrap {
+    position: absolute;
+    left: $half-rhythm;
+    right: $half-rhythm;
+    top: 0;
+    bottom: 0;
+
+  }
+  .highlight-box img {
     max-width: 100%;
     height: auto;
   }

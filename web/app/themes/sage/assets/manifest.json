@@ -22,9 +22,6 @@
     },
     "modernizr.js": {
       "bower": ["modernizr"]
-    },
-    "masonry.js": {
-      "bower": ["masonry"]
     }
   },
   "config": {
