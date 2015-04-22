@@ -2,7 +2,7 @@
 
 use Roots\Sage\Config;
 use Roots\Sage\Wrapper;
-use Testeleven\Positioned\TemplateTags;
+use Testeleven\NamastePostTypes\TemplateTags;
 
 ?>
 
@@ -22,42 +22,12 @@ get_template_part('templates/header');
   <div class="content row">
     <?php get_template_part('templates/carousel'); ?>
   </div>
-  <!-- /.content -->
-</div>
-<!-- /.wrap -->
-<div class="welcome">
-  <div class="wrap container">
-    <div class="content row">
-      <div class="full-width-heading">
-        <?php TemplateTags\post_in_position('what-we-offer', 'positioned_title', 2); ?>
-      </div>
-      <div class="front-page-centered">
-        <?php TemplateTags\post_in_position('fifteen-second-intro', 'positioned_full', 3);?>
-      </div>
-      <div class="front-page-centered">
-        <?php TemplateTags\post_in_position('our-approach-to-yoga', 'positioned_full', 3); ?>
-        <?php TemplateTags\post_in_position('our-approach-to-yoga-image', 'positioned_image'); ?>
-      </div>
-
-      <div class="front-page-centered">
-        <?php TemplateTags\post_in_position('our-approach-to-energywork', 'positioned_full', 3); ?>
-        <?php TemplateTags\post_in_position('our-approach-to-energywork-image', 'positioned_image'); ?>
-      </div>
-
-      <div class="front-page-centered">
-        <?php TemplateTags\post_in_position('our-approach-to-esthetics', 'positioned_full', 3); ?>
-        <?php TemplateTags\post_in_position('our-approach-to-esthetics-image', 'positioned_image'); ?>
-      </div>
-      </section>
-    </div>
-  </div>
-</div>
-<div class="wrap container qualifications">
-  <div class="content row">
-    <div class="front-page-centered">
-      <?php TemplateTags\post_in_position('who-we-are', 'positioned_full', 3); ?>
-      <?php TemplateTags\post_in_position('andrea-image', 'positioned_image'); ?>
-    </div>
+  <div class="highlights">
+    <?php TemplateTags\display_notifications(3); ?>
+    <?php TemplateTags\display_workshops(3, 3); ?>
+    <?php TemplateTags\display_videos(); ?>
+    <?php TemplateTags\display_posts(); ?>
+    <?php TemplateTags\display_testimonials(); ?>
   </div>
 </div>
 <?php
