@@ -2,15 +2,13 @@
 .archive .main {
   @include make-sm-column(8);
   @include make-sm-column-offset(2);
-  .page-header {
+  .entry-title {
     @include make-sm-column(12);
   }
-  .entry-summary,
-  .entry-title {
-    @include make-sm-column(8);
-  }
-  .featured-image {
-    @include make-sm-column(4);
+  .featured-image,
+  .entry-summary {
+    @include make-sm-column(12);
+    @include make-md-column(6);
   }
   padding-bottom: $rhythm;
 }

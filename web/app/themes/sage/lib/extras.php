@@ -33,7 +33,7 @@ function excerpt_more() {
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 // Hide the admin bar
-//add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');
 
 function excerpt_more_link($output) {
   if (has_excerpt() && ! is_attachment()) {

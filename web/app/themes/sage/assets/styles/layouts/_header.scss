@@ -8,11 +8,11 @@
   }
 
   .btn {
-    background: #500708;
+    background: darken(#ffcc00, 10%);
     color: $inverse-color;
     border: none;
     &:hover {
-      background: lighten(#500708, 10%);
+      background: #ffcc00;
     }
   }
 }
@@ -24,15 +24,15 @@
 
 // Site logo
 .banner .site-logo {
-  @include make-sm-column(2);
+  @include make-sm-column(3);
 }
 .banner .site-logo img {
-  margin-top: $half-rhythm;
+  margin-top: 0;
 }
 
 @media (min-width: $screen-sm-min) {
   .banner .site-logo  img{
-    margin-top: 0;
+    margin-top: $half-rhythm;
   }
   .banner .site-logo {
     margin-bottom: $half-rhythm;
@@ -102,10 +102,20 @@
   }
 }
 
-// Set line height to 1 to make a nice underline.
-.navbar-nav li a {
-  line-height: 1;
+// For mobile nav
+@media (max-width: $screen-sm-max) {
+  .primary-nav-container ul li {
+      padding: auto 0;
+  }
+  .navbar-nav li:hover {
+      background-color: lighten($brand-primary, 5%);
+  }
+  .navbar-nav .active {
+    background-color: lighten($brand-primary, 10%);
+  }
 }
+
+
 // Underline a:hover and li.active on small+ screens.
 @media (min-width: $screen-sm-min) {
   .navbar-nav  li a {
@@ -123,7 +133,7 @@
 @media (min-width: 999px) {
   .banner .primary-nav-container {
     clear: none;
-    @include make-sm-column(10);
+    @include make-sm-column(9);
     margin-top: 16px;
     margin-bottom: 0;
   }

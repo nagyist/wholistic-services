@@ -5,6 +5,8 @@
       <h2>Schedule an appointment</h2>
     <?php elseif (has_category('class')) : ?>
       <h2>Sign up</h2>
+      <?php elseif (has_category('workshop')) : ?>
+      <h2>Sign up</h2>
     <?php else : ?>
       <h2>Contact us</h2>
     <?php endif; ?>

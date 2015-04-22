@@ -1,18 +1,26 @@
 .testeleven-carousel .carousel-inner .text {
-  @include make-md-column(4);
+  @include make-sm-column(12);
+  @include make-md-column(6);
+  @include make-lg-column(4);
   padding-left: rhythm(3);
 }
 
 .testeleven-carousel img {
   @include make-sm-column(12);
-  @include make-md-column(8);
+  @include make-md-column(6);
+  @include make-lg-column(8);
   padding-right: rhythm(3);
+}
+
+.testeleven-carousel .image {
+  @include clearfix;
 }
 
 // Add left padding to the image for small screens - there is no text area on them
 @media (min-width: $screen-sm-min) {
   .testeleven-carousel img {
     padding-left: rhythm(3);
+    display: inline-block;
   }
 }
 
@@ -45,9 +53,10 @@
   }
 }
 
-
-.carousel-indicators {
-  left: 50%;
+@media (min-width: $screen-sm-min) {
+  .carousel-indicators {
+    left: 71%;
+  }
 }
 
 @media (min-width: $screen-md-min) {
@@ -56,8 +65,15 @@
   }
 }
 
+.carousel-indicators {
+  left: 50%;
+}
+
 .image-panel h3 {
+//  font-size: $font-size-h4;
   margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .image-panel p {
