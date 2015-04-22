@@ -52,7 +52,13 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        // Initialize masonry
+        //var highlights = $('#highlights');
+        //var msnry = new Masonry(highlights, {
+        //  columnWidth: 200,
+        //  itemSelector: '.highlight-box'
+        //});
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

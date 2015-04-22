@@ -17,6 +17,7 @@ function display_workshops($limit = 1, $heading_level = 2) {
 <!--			</header>-->
 			<?php while ($query->have_posts()) : $query->the_post(); ?>
 				<article <?php post_class(array('editable', 'highlight-box')); ?>>
+
 					<?php if (has_post_thumbnail()) : ?>
 						<div class="featured-image">
 							<?php the_post_thumbnail(); ?>

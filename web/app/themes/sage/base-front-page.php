@@ -22,12 +22,16 @@ get_template_part('templates/header');
   <div class="content row">
     <?php get_template_part('templates/carousel'); ?>
   </div>
-  <div class="highlights">
-    <?php TemplateTags\display_notifications(3); ?>
-    <?php TemplateTags\display_workshops(3, 3); ?>
-    <?php TemplateTags\display_videos(); ?>
-    <?php TemplateTags\display_posts(); ?>
-    <?php TemplateTags\display_testimonials(); ?>
+</div>
+<div class="wrap container">
+  <div class="content row">
+    <div id="highlights">
+      <?php TemplateTags\display_notifications(3); ?>
+      <?php TemplateTags\display_workshops(3, 3); ?>
+      <?php TemplateTags\display_videos(); ?>
+      <?php TemplateTags\display_posts(); ?>
+      <?php TemplateTags\display_testimonials(); ?>
+    </div>
   </div>
 </div>
 <?php

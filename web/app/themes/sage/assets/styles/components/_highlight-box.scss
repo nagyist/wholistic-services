@@ -1,11 +1,15 @@
+#highlights {
+  @include clearfix;
+}
 .highlight-box {
   @include make-sm-column(4);
   @include clearfix;
-//  border: 1px solid;
+  border: 1px solid;
   padding: $half-rhythm;
   margin-bottom: $half-rhythm;
   border-radius: 7px;
   font-size: $font-size-small;
+  height: 400px;
   h3 {
     font-size: $font-size-h4;
     margin-top: 0; 
