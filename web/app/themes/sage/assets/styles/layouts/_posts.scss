@@ -13,7 +13,7 @@
   padding-bottom: $rhythm;
 }
 
-.single .main {
+.single .main article {
   @include make-sm-column(8);
   @include make-sm-column-offset(2);
 }

@@ -6,20 +6,6 @@
     color: $inverse-color;
     font-size: 18px;
   }
-
-  .btn {
-    background: darken(#ffcc00, 10%);
-    color: $inverse-color;
-    border: none;
-    &:hover {
-      background: #ffcc00;
-    }
-  }
-}
-
-// Mock the active class for the contact button
-.contact .banner .btn {
-  background: lighten($link-color, 10%);
 }
 
 // Site logo
@@ -27,15 +13,13 @@
   @include make-sm-column(3);
 }
 .banner .site-logo img {
-  margin-top: 0;
+  margin-top: $half-rhythm;
 }
 
 @media (min-width: $screen-sm-min) {
   .banner .site-logo  img{
-    margin-top: $half-rhythm;
-  }
-  .banner .site-logo {
-    margin-bottom: $half-rhythm;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -103,21 +87,39 @@
 }
 
 // For mobile nav
-@media (max-width: $screen-sm-max) {
-  .primary-nav-container ul li {
-      padding: auto 0;
-  }
-  .navbar-nav li:hover {
-      background-color: lighten($brand-primary, 5%);
-  }
-  .navbar-nav .active {
-    background-color: lighten($brand-primary, 10%);
-  }
+//@media (max-width: $screen-sm-max) {
+//  .primary-nav-container ul li {
+//      padding: auto 0;
+//  }
+//  .navbar-nav li:hover {
+//      background-color: lighten($brand-primary, 5%);
+//  }
+//  .navbar-nav .active {
+//    background-color: lighten($brand-primary, 10%);
+//  }
+//}
+.primary-nav-container ul li {
+//  padding: auto;
+}
+.navbar-nav li:hover {
+  background-color: lighten($brand-primary, 5%);
+}
+.navbar-nav .active {
+  background-color: lighten($brand-primary, 10%);
 }
 
 
 // Underline a:hover and li.active on small+ screens.
 @media (min-width: $screen-sm-min) {
+  .navbar-nav ul li {
+    padding: 15px 46px;
+  }
+  .navbar-nav li:hover {
+    background-color: $brand-primary;
+  }
+  .navbar-nav .active {
+    background-color: $brand-primary;
+  }
   .navbar-nav  li a {
     padding: 0;
     &:hover {
@@ -138,7 +140,7 @@
     margin-bottom: 0;
   }
   .banner .site-logo {
-    margin-top: -$rhythm;
+    margin-top: -$half-rhythm;
     margin-bottom: 20px;
   }
 }/*/mediaquery*/
