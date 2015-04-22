@@ -17,14 +17,16 @@ $violet: darken(#C628CC, $mute);
   @include make-md-column(4);
   @include clearfix;
   margin-bottom: $grid-gutter-width;
+  font-size: $font-size-small;
   h3 {
     font-size: $font-size-h4;
-    font-weight: bold;
+//    font-weight: bold;
     margin-top: 0;
   }
   img {
     width: 100%;
     height: auto;
+    margin-bottom: $half-rhythm;
   }
   .wrap {
     @include clearfix;
@@ -33,10 +35,10 @@ $violet: darken(#C628CC, $mute);
   }
 
   a {
-    color: $inverse-color;
+    color: #ffffff;
     text-decoration: underline;
     &:hover {
-      color: $blue;
+      color: $brand-primary;
     }
   }
 
@@ -71,9 +73,21 @@ $violet: darken(#C628CC, $mute);
   }
 }
 
+.highlights .nbs_workshop {
+  h3 {
+    margin-bottom: 0;
+  }
+  .datetime {
+    margin-bottom: $half-rhythm;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $screen-sm-min) {
   .highlight-box {
-    height: 400px;
+    height: 440px;
   }
   .highlight-box .wrap {
     position: absolute;

@@ -28,9 +28,17 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
  * Clean up the_excerpt()
  */
 function excerpt_more() {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
+  return ' [<a href="' . get_permalink() . '">' . __('more...', 'sage') . '</a>]';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 // Hide the admin bar
 //add_filter('show_admin_bar', '__return_false');
+
+function excerpt_more_link($output) {
+  if (has_excerpt() && ! is_attachment()) {
+    $output .= excerpt_more();
+  }
+  return $output;
+}
+add_filter('get_the_excerpt', __NAMESPACE__ . '\\excerpt_more_link');

@@ -30,7 +30,7 @@ get_template_part('templates/header');
       <?php TemplateTags\display_notifications(3); ?>
       <?php TemplateTags\display_workshops(3, 3); ?>
       <?php TemplateTags\display_videos(); ?>
-      <?php TemplateTags\display_posts(); ?>
+      <?php TemplateTags\display_posts(3, 6); ?>
       <?php TemplateTags\display_testimonials(); ?>
     </div>
   </div>
