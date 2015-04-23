@@ -65,11 +65,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="2.099359" vertical-offset="0" max-vertical-offset="2160">
-                  <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+                <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2160">
+                  <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_footer.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.51282054" vertical-offset="0" max-vertical-offset="936">
+                  <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -132,7 +142,6 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/index.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_schedule.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/lib/init.php" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_footer.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/footer.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/functions.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss" />
@@ -156,6 +165,7 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_carousel.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_header.scss" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_footer.scss" />
       </list>
     </option>
   </component>
@@ -432,13 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="795">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/nbs-theme/templates/post-contact-form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
@@ -665,8 +668,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.099359" vertical-offset="0" max-vertical-offset="2160">
-          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51282054" vertical-offset="0" max-vertical-offset="936">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
           <folding />
         </state>
       </provider>
