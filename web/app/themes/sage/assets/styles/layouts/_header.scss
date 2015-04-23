@@ -108,6 +108,10 @@
   background-color: lighten($brand-primary, 10%);
 }
 
+.navbar-nav li a {
+  line-height: 1;
+}
+
 
 // Underline a:hover and li.active on small+ screens.
 @media (min-width: $screen-sm-min) {
@@ -136,7 +140,7 @@
   .banner .primary-nav-container {
     clear: none;
     @include make-sm-column(9);
-    margin-top: 16px;
+    margin-top: 31px;
     margin-bottom: 0;
   }
   .banner .site-logo {
