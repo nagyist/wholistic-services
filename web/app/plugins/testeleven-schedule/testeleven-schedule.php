@@ -432,7 +432,6 @@ class Testeleven_Schedule {
 					$query->the_post();
 					$link = get_field('scheduled_link');
 					$output .= '<li><a href="'. $link .'">' . get_the_title() . '</a></li>';
-					$output .= '<hr>';
 				}
 				$output .= '</ul>';
 				$output .= '</div>'; // End of day loop.

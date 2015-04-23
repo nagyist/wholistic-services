@@ -12,7 +12,10 @@
   margin: $half-rhythm auto;
 }
 
-
+.schedule-list ul {
+  list-style: none;
+  padding-left: 0;
+}
 
 .schedule-table th {
   // Divide the table into 8 equal columns
@@ -28,7 +31,6 @@
 .schedule-table.table  {
   border-collapse: separate !important;
   border-spacing: 4px !important;
-  font-family: $headings-font-family;
 }
 
 // Style the time blocks.
@@ -45,30 +47,30 @@
   }
 }
 .schedule-table .gentle-yoga {
-  background: #509560;
+  background: $green;
   &:hover {
-    background: #7cb088;
+    background: lighten($green, 5%);
   }
 }
 
 .schedule-table .moderate-yoga {
-  background: #4779B2;
+  background: $blue;
   &:hover {
-    background: lighten(#4779B2, 5%);
+    background: lighten($blue, 5%);
   }
 }
 
 .schedule-table .ashtanga-yoga {
-  background: #8b3c3e;
+  background: $red;
   &:hover {
-    background: #a86d6e;
+    background: lighten($red, 5%);
   }
 }
 
 .schedule-table .chair-yoga {
-  background: #bba738;
+  background: $orange;
   &:hover {
-    background: #c8b960;
+    background: lighten($orange, 5%);
   }
 }
 
@@ -81,3 +83,10 @@ td.alert-warning {
   border: 3px solid red !important;
   color: red !important;
 }
+
+.tooltip-inner {
+  background: $brand-primary;
+  color: $inverse-color;
+}
+
+

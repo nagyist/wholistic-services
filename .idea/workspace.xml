@@ -51,12 +51,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="head.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/head.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.17628205" vertical-offset="0" max-vertical-offset="936">
+                <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
                   <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="testeleven-schedule.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/app/plugins/testeleven-schedule/testeleven-schedule.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.55128205" vertical-offset="3234" max-vertical-offset="4320">
+                  <caret line="434" column="0" selection-start-line="434" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#2857#7279#0#PHP" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -65,11 +77,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7916667" vertical-offset="1239" max-vertical-offset="2190">
-                  <caret line="132" column="31" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
+                <state vertical-scroll-proportion="-2.125" vertical-offset="1239" max-vertical-offset="2190">
+                  <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-34.0" vertical-offset="1134" max-vertical-offset="2085">
+                  <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_schedule.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_schedule.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.25641027" vertical-offset="0" max-vertical-offset="1470">
+                  <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -108,8 +140,8 @@
           <file leaf-file-name="_highlight-box.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_highlight-box.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-65.0" vertical-offset="0" max-vertical-offset="1665">
-                  <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1515">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -125,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss.example" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_wp-classes.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_comments.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/page-scratch.php" />
@@ -150,7 +181,6 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/lib/config.php" />
         <option value="$PROJECT_DIR$/web/app/themes/nbs-theme/templates/post-contact-form.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/index.php" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_schedule.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/lib/init.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/footer.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/functions.php" />
@@ -170,12 +200,14 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_front-page.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_posts.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/head.php" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_carousel.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_footer.scss" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_highlight-box.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/lib/extras.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_header.scss" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_highlight-box.scss" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_schedule.scss" />
+        <option value="$PROJECT_DIR$/web/app/plugins/testeleven-schedule/testeleven-schedule.php" />
       </list>
     </option>
   </component>
@@ -319,13 +351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_sidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="420">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/nbs-theme/lib/conditional-tag-check.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
@@ -414,13 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_schedule.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="360" max-vertical-offset="1320">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -626,14 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="1935">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_carousel.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.39423078" vertical-offset="879" max-vertical-offset="1815">
@@ -657,22 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17628205" vertical-offset="0" max-vertical-offset="936">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_highlight-box.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-65.0" vertical-offset="0" max-vertical-offset="1665">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/lib/extras.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="750">
@@ -683,9 +677,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7916667" vertical-offset="1239" max-vertical-offset="2190">
-          <caret line="132" column="31" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
+        <state vertical-scroll-proportion="-2.125" vertical-offset="1239" max-vertical-offset="2190">
+          <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_highlight-box.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.0" vertical-offset="1134" max-vertical-offset="2085">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/components/_schedule.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25641027" vertical-offset="0" max-vertical-offset="1470">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/plugins/testeleven-schedule/testeleven-schedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55128205" vertical-offset="3234" max-vertical-offset="4320">
+          <caret line="434" column="0" selection-start-line="434" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
+          <folding>
+            <element signature="e#2857#7279#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

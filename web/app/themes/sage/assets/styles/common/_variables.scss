@@ -6,7 +6,6 @@ $sidebar-sm-columns:    4;
 // Colors
 $brand-primary:         #6e0b0e;
 $link-color: #bb252a;
-//$link-hover-color: $text-color;
 
 $gray-base: #110808;
 $gray-darker:            lighten($gray-base, 15.5%);
@@ -19,6 +18,16 @@ $body-bg: #fff;
 
 // Custom variables
 $inverse-color: #f3ebec;
+
+$trans: 0.1;
+$darken: 7%;
+
+$red: darken(transparentize(#ff0000, $trans), $darken);
+$orange: darken(transparentize(#ff6600, $trans), $darken);
+$yellow: darken(transparentize(#ffcc00, $trans), $darken);
+$green: darken(transparentize(#339933, $trans), $darken);
+$blue: darken(transparentize(#2893c6, $trans), $darken);
+$violet: darken(transparentize(#C628CC, $trans), $darken);
 
 //$font-family-base: "freight-text-pro", sans-serif;
 $font-family-base: helvetica, sans-serif;
@@ -116,8 +125,9 @@ $nav-disabled-link-hover-color:             $gray-light;
 
 
 // Tooltips
-$tooltip-bg: #e2cecf;
-$tooltip-color: $gray-dark;
+//$tooltip-bg: $brand-primary;
+//$tooltip-color: $inverse-color;
+//$tooltip-arrow-color: $brand-primary;
 
 
 
