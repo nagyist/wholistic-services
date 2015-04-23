@@ -1,11 +1,12 @@
-$mute: 10%;
+$trans: 0.1;
+$darken: 7%;
 
-$red: darken(#ff0000, $mute);
-$orange: darken(#ff6600, $mute);
-$yellow: darken(#ffcc00, $mute);
-$green: darken(#339933, $mute);
-$blue: darken(#2893c6, $mute);
-$violet: darken(#C628CC, $mute);
+$red: darken(transparentize(#ff0000, $trans), $darken);
+$orange: darken(transparentize(#ff6600, $trans), $darken);
+$yellow: darken(transparentize(#ffcc00, $trans), $darken);
+$green: darken(transparentize(#339933, $trans), $darken);
+$blue: darken(transparentize(#2893c6, $trans), $darken);
+$violet: darken(transparentize(#C628CC, $trans), $darken);
 
 #highlights {
   @include clearfix;
@@ -35,10 +36,10 @@ $violet: darken(#C628CC, $mute);
   }
 
   a {
-    color: #ffffff;
+    color: $text-color;
     text-decoration: none;
     &:hover {
-      color: $brand-primary;
+      color: lighten($text-color, 20%);
     }
   }
 
