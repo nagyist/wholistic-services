@@ -2,7 +2,7 @@
   @include make-sm-column(12);
   @include make-md-column(6);
   @include make-lg-column(4);
-  padding-left: rhythm(3);
+//  padding-left: rhythm(3);
 }
 
 .testeleven-carousel img {
@@ -18,31 +18,37 @@
 
 // Add left padding to the image for small screens - there is no text area on them
 @media (min-width: $screen-sm-min) {
-  .testeleven-carousel img {
-    padding-left: rhythm(3);
-    display: inline-block;
-  }
-  .testeleven-carousel .carousel-inner .text {
-    padding-right: 0;
-    height: auto;
-  }
+//  body {
+//    background: #ffff9f;
+//  }
+//  .testeleven-carousel h3 {
+//    margin-bottom: $half-rhythm;
+//  }
+//  .testeleven-carousel img {
+//    padding-left: rhythm(3);
+//    display: inline-block;
+//  }
+//  .testeleven-carousel .carousel-inner .text {
+//    padding-right: 0;
+//    height: auto;
+//  }
 }
 
-.testeleven-carousel .carousel-inner .text {
-  padding-right: rhythm(3);
-  p {
-    height: rhythm(4);
-  }
-}
+//.testeleven-carousel .carousel-inner .text {
+//  padding-right: rhythm(3);
+//  p {
+//    height: rhythm(4);
+//  }
+//}
 
 // Get rid of the right image padding for medium and up
 @media (min-width: $screen-md-min) {
-  .testeleven-carousel img {
-    padding-left: 15px;
-  }
-  .testeleven-carousel .text {
-    padding-right: 0;
-  }
+//  .testeleven-carousel img {
+//    padding-left: 15px;
+//  }
+//  .testeleven-carousel .text {
+//    padding-right: 0;
+//  }
 }
 
 .carousel .carousel-control {
@@ -58,35 +64,34 @@
 }
 
 .carousel .glyphicon {
-  color: #fff;
+  color: $text-color;
 }
 
-@media (min-width: $screen-sm-min) {
-  .carousel .glyphicon {
-    color: $text-color;
-  }
-}
+//@media (min-width: $screen-sm-min) {
+//  .carousel .glyphicon {
+//    color: $text-color;
+//  }
+//}
 
-@media (min-width: $screen-sm-min) {
-  .carousel-indicators {
-    left: 71%;
-  }
-}
+//@media (min-width: $screen-sm-min) {
+//  .carousel-indicators {
+//    left: 71%;
+//  }
+//}
 
-@media (min-width: $screen-md-min) {
-  .carousel-indicators {
-    left: 66%;
-  }
-}
+//@media (min-width: $screen-md-min) {
+//  .carousel-indicators {
+//    left: 66%;
+//  }
+//}
 
 .carousel-indicators {
   left: 50%;
 }
 
 .image-panel h3 {
-//  font-size: $font-size-h4;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: $quarter-rhythm;
   font-weight: bold;
 }
 
@@ -106,5 +111,59 @@
   }
   h3 {
     margin-bottom: $quarter-rhythm;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .testeleven-carousel {
+    .text {
+      height: 213px;
+    }
+    .carousel-inner .text, img {
+      padding: 0 rhythm(3);
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right {
+      top: 69%;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .image-panel {
+    height: 275px;
+  }
+  .testeleven-carousel {
+    .carousel-inner .text {
+      height: auto;
+      padding-right: 15px;
+    }
+    img {
+      padding-left: 15px;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right {
+      top: 42%;
+    }
+    .carousel-indicators {
+      left: 71%;
+      bottom: 14%;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .testeleven-carousel {
+    .image-panel {
+      height: auto;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right {
+      top: 50%;
+    }
+    .carousel-indicators {
+      left: 64%;
+      bottom: 3%;
+    }
   }
 }
