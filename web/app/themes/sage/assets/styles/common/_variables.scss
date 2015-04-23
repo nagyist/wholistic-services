@@ -24,7 +24,7 @@ $darken: 7%;
 
 $red: darken(transparentize(#ff0000, $trans), $darken);
 $orange: darken(transparentize(#ff6600, $trans), $darken);
-$yellow: darken(transparentize(#ffcc00, $trans), $darken);
+$yellow: darken(transparentize(#ffcc00, $trans), 12%);
 $green: darken(transparentize(#339933, $trans), $darken);
 $blue: darken(transparentize(#2893c6, $trans), $darken);
 $violet: darken(transparentize(#C628CC, $trans), $darken);
