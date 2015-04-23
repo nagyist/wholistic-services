@@ -11,6 +11,7 @@
 // Site logo
 .banner .site-logo {
   @include make-sm-column(3);
+  @include make-md-column(2);
 }
 .banner .site-logo img {
   margin-top: $half-rhythm;
@@ -129,6 +130,7 @@
   .banner .primary-nav-container {
     clear: none;
     @include make-sm-column(9);
+    @include make-md-column(10);
     margin-top: 31px;
     margin-bottom: 0;
   }
