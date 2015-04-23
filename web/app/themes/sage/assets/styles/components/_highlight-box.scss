@@ -36,7 +36,7 @@ $violet: darken(#C628CC, $mute);
 
   a {
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
     &:hover {
       color: $brand-primary;
     }
