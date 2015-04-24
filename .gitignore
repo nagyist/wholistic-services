@@ -1,8 +1,8 @@
 # Application
 web/app/plugins/*
-!web/app/plugins/advanced-custom-fields-pro/
+#!web/app/plugins/advanced-custom-fields-pro/
 !web/app/pluging/testeleven-image-panel/
-!web/app/plugins/gravity-forms/
+#!web/app/plugins/gravity-forms/
 !web/app/plugins/testeleven-positioned/
 !web/app/plugins/namaste-post-types/
 !web/app/plugins/testeleven-schedule/
