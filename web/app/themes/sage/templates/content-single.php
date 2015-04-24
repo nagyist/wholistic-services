@@ -1,8 +1,24 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class('row'); ?>>
     <header>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-      <!--      --><?php //get_template_part('templates/entry-meta'); ?>
+      <h1 class="entry-title <?php if (get_field('workshop_date')) {echo 'has-date';} ?>"><?php the_title(); ?></h1>
+      <?php if (get_field('workshop_date')) : ?>
+        <?php $date = get_field('workshop_date'); ?>
+        <?php $time = get_field('workshop_time'); ?>
+        <?php if ($date && $time) {
+          $datetime = "$date, $time";
+        } elseif ($date || $time) {
+          $datetime = "$date $time";
+        } else {
+          $datetime = null;
+        }
+        ?>
+        <?php if ($datetime) : ?>
+          <div class="datetime">
+            <?php echo $datetime; ?>
+          </div>
+        <?php endif; ?>
+      <?php endif;?>
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
