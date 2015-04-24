@@ -114,8 +114,8 @@
           <file leaf-file-name="namaste-post-types.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/app/plugins/namaste-post-types/namaste-post-types.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.1378205" vertical-offset="1605" max-vertical-offset="4665">
-                  <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.625" vertical-offset="2925" max-vertical-offset="4665">
+                  <caret line="236" column="37" selection-start-line="236" selection-start-column="37" selection-end-line="236" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -247,7 +247,6 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/manifest.json" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/lib/assets.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js" />
-        <option value="$PROJECT_DIR$/web/app/plugins/namaste-post-types/namaste-post-types.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/base-front-page.php" />
         <option value="$PROJECT_DIR$/web/app/plugins/namaste-post-types/namaste-post-type-template-tags.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/secondary-menu.php" />
@@ -266,6 +265,7 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/content-single.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/layouts/_posts.scss" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_global.scss" />
+        <option value="$PROJECT_DIR$/web/app/plugins/namaste-post-types/namaste-post-types.php" />
       </list>
     </option>
   </component>
@@ -782,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/plugins/namaste-post-types/namaste-post-types.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1378205" vertical-offset="1605" max-vertical-offset="4665">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.625" vertical-offset="2925" max-vertical-offset="4665">
+          <caret line="236" column="37" selection-start-line="236" selection-start-column="37" selection-end-line="236" selection-end-column="37" />
           <folding />
         </state>
       </provider>

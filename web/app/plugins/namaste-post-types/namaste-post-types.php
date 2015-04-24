@@ -234,7 +234,7 @@ class Namaste_Post_Types {
 							'id' => '',
 						),
 						'display_format' => 'd/m/Y',
-						'return_format' => 'd/m/Y',
+						'return_format' => 'F j, Y',
 						'first_day' => 1,
 					),
 					array (
