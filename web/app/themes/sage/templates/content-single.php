@@ -6,6 +6,9 @@
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
+      <div class="featured-image">
+        <?php the_post_thumbnail(); ?>
+      </div>
       <?php if(has_category('class')) : ?>
         <p>Have a look at our <a href="/schedule">schedule</a> to see if there is
           a class that works for you.</p>
