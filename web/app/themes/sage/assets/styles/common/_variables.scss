@@ -32,7 +32,14 @@ $violet: darken(transparentize(#C628CC, $trans), $darken);
 //$font-family-base: "freight-text-pro", sans-serif;
 $font-family-base: helvetica, sans-serif;
 $headings-font-family: "droid-serif", sans-serif;
-
+// We are using fonts from typekit. They are being loaded asynchronously. While they are loading the
+// class .wf-loading is applied to the html element.
+.wf-loading {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "droid-serif";
+    visibility: hidden;
+  }
+}
 // Rhythm
 $font-size-base: 22px;
 

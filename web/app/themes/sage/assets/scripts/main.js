@@ -24,26 +24,26 @@
       init: function() {
         // JavaScript to be fired on all pages
         // See http://stackoverflow.com/questions/12522291/pausing-youtube-iframe-api-in-javascript
-        var yt_int, yt_players={},
-          initYT = function() {
-            $(".testeleven-video").each(function() {
-              yt_players[this.id] = new YT.Player(this.id);
-            });
-          };
-        $.getScript("https://www.youtube.com/player_api", function() {
-          yt_int = setInterval(function(){
-            if(typeof YT === "object"){
-              initYT();
-              clearInterval(yt_int);
-            }
-          },500);
-        });
+        //var yt_int, yt_players={},
+        //  initYT = function() {
+        //    $(".testeleven-video").each(function() {
+        //      yt_players[this.id] = new YT.Player(this.id);
+        //    });
+        //  };
+        //$.getScript("https://www.youtube.com/player_api", function() {
+        //  yt_int = setInterval(function(){
+        //    if(typeof YT === "object"){
+        //      initYT();
+        //      clearInterval(yt_int);
+        //    }
+        //  },500);
+        //});
 
-        $('.modal').on('hide.bs.modal', function() {
-          var player_id = $(this).attr('data-player-id');
-          yt_players[player_id].pauseVideo();
-
-        });
+        //$('.modal').on('hide.bs.modal', function() {
+        //  var player_id = $(this).attr('data-player-id');
+        //  yt_players[player_id].pauseVideo();
+        //
+        //});
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
