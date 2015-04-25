@@ -1,6 +1,8 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/advanced-custom-fields-pro/
+!web/app/plugins/wp-migrate-db-pro/
+!web/app/plugins/wp-rocket/
 !web/app/pluging/testeleven-image-panel/
 !web/app/plugins/gravityforms/
 !web/app/plugins/testeleven-positioned/
