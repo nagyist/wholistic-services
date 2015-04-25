@@ -174,8 +174,8 @@
           <file leaf-file-name="assets.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/app/themes/sage/lib/assets.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8397436" vertical-offset="339" max-vertical-offset="1275">
-                  <caret line="75" column="83" selection-start-line="75" selection-start-column="83" selection-end-line="75" selection-end-column="83" />
+                <state vertical-scroll-proportion="0.82371795" vertical-offset="339" max-vertical-offset="1275">
+                  <caret line="74" column="82" selection-start-line="74" selection-start-column="82" selection-end-line="74" selection-end-column="82" />
                   <folding />
                 </state>
               </provider>
@@ -299,9 +299,9 @@
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/head.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/common/_variables.scss" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/lib/assets.php" />
         <option value="$PROJECT_DIR$/web/app/advanced-cache.php" />
         <option value="$PROJECT_DIR$/config/environments/production.php" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/lib/assets.php" />
       </list>
     </option>
   </component>
@@ -794,14 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/lib/assets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8397436" vertical-offset="339" max-vertical-offset="1275">
-          <caret line="75" column="83" selection-start-line="75" selection-start-column="83" selection-end-line="75" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/content-single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06423983" vertical-offset="0" max-vertical-offset="934">
@@ -822,6 +814,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22435898" vertical-offset="0" max-vertical-offset="936">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/lib/assets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82371795" vertical-offset="339" max-vertical-offset="1275">
+          <caret line="74" column="82" selection-start-line="74" selection-start-column="82" selection-end-line="74" selection-end-column="82" />
           <folding />
         </state>
       </provider>
