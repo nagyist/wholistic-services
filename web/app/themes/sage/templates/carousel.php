@@ -45,12 +45,14 @@ use Testeleven\ImagePanel;
 		</div>
 		<a class="left carousel-control" role="button" data-slide="prev"
 		   href="#front-page-carousel">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="control-text-left btn btn-primary">&#8592;</span>
+<!--			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
 			<span class="sr-only">Previous</span>
 		</a>
 		<a class="right carousel-control" role="button" data-slide="next"
 		   href="#front-page-carousel">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="control-text-right btn btn-primary">&#8594;</span>
+<!--			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
 			<span class="sr-only">Next</span>
 		</a>
 

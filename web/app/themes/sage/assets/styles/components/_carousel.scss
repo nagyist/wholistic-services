@@ -20,12 +20,21 @@
   background-image: none;
 }
 
-.carousel .carousel-control .glyphicon-chevron-left {
-  left: rhythm();
+.carousel-control .control-text-left,
+.carousel-control .control-text-right {
+  color: $inverse-color;
+  position: absolute;
+  font-weight: bold;
 }
 
-.carousel .carousel-control .glyphicon-chevron-right {
-  right: rhythm();
+.carousel .carousel-control .glyphicon-chevron-left,
+.carousel .carousel-control .control-text-left {
+  left: $half-rhythm;
+}
+
+.carousel .carousel-control .glyphicon-chevron-right,
+.carousel .carousel-control .control-text-right {
+  right: $half-rhythm;
 }
 
 .carousel .glyphicon {
@@ -71,7 +80,9 @@
       padding: 0 rhythm(3);
     }
     .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right {
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .control-text-left,
+    .carousel-control .control-text-right {
       top: 69%;
     }
   }
@@ -90,7 +101,9 @@
       padding-left: 15px;
     }
     .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right {
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .control-text-left,
+    .carousel-control .control-text-right {
       top: 42%;
     }
     .carousel-indicators {
@@ -106,7 +119,9 @@
       height: auto;
     }
     .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right {
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .control-text-left,
+    .carousel-control .control-text-right {
       top: 50%;
     }
     .carousel-indicators {
