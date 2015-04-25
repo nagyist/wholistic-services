@@ -26,16 +26,19 @@
   }
 
   a {
-    color: $inverse-color;
-    text-decoration: underline;
+    color: darken($text-color, 10%);
+    text-decoration: none;
     &:hover {
-      color: $text-color;
+      color: $inverse-color;
     }
   }
 
   .red {
     background: $red;
     color: $inverse-color;
+    a {
+      text-decoration: underline;
+    }
   }
 
   .orange {
