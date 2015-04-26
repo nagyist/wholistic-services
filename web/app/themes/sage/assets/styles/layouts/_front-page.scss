@@ -3,74 +3,33 @@
   margin-bottom: $rhythm;
 }
 
+@media (min-width: $screen-md-min) {
+  .testeleven-carousel {
+    margin-bottom: 0;
+  }
+}
+
 .testeleven-static-carousel {
   margin: $rhythm auto;
   @include make-sm-column(12);
+  img {
+    margin-top: $quarter-rhythm;
+  }
 }
 
 .highlights h2 {
   @include make-sm-column(12);
-  font-size: $font-size-h1;
   font-weight: bold;
   margin: 0 0 $half-rhythm 0;
-  text-align: center;
+  text-align: left;
   line-height: 1;
 }
 
-//.welcome, .qualifications {
-//  h2 { font-size: $font-size-h1;}
-//  h3 { font-size: $font-size-h2;}
-//  h4 { font-size: $font-size-h3;}
-//  h5 { font-size: $font-size-h4;}
-//
-//  img {
-//    @include make-xs-column(12);
-//  }
-//
-//  .full-width-heading {
-//    @include make-sm-column(12);
-//    text-align: center;
-//  }
-//  .positioned_full {
-//    @include make-sm-column(8);
-//    @include make-sm-column-offset(2);
-//    text-align: center;
-//  }
-//  img {
-//    @include make-sm-column(4);
-//    @include make-sm-column-offset(4);
-//  }
-//}
-//
-//.welcome h2 {
-//  font-weight: bold;
-//  margin-top: 0;
-//}
-//
-//.welcome {
-//  background: $brand-primary;
-//  color: $inverse-color;
-//  padding-bottom: $rhythm;
-//  @include clearfix;
-//}
-//
-//.welcome h3,
-//.qualifications h3 {
-//  font-weight: normal;
-//  margin-top: 0;
-//}
-
-//.welcome img {
-//  margin-bottom: $rhythm;
-//}
-
-//.qualifications {
-//  background: $body-bg;
-//  color: $text-color;
-//  padding-bottom: $rhythm;
-//  @include clearfix;
-//}
-
-//.qualifications h3 {
-//  margin-top: $half-rhythm;
-//}
+@media (min-width: $screen-lg-min) {
+  .highlights h2 {
+    font-size: $font-size-h1;
+  }
+  .testeleven-carousel {
+    margin-bottom: $rhythm;
+  }
+}

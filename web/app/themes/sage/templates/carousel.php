@@ -29,8 +29,10 @@ use Testeleven\ImagePanel;
 				<div class="item <?php echo add_active_class($post_count); ?>">
 					<div class="image-panel">
 						<div class="text">
-							<header><h3><?php the_title(); ?></h3></header>
-							<?php the_content(); ?>
+              <div class="wrap">
+                <header><h3><?php the_title(); ?></h3></header>
+                <?php the_content(); ?>
+              </div>
 						</div>
 						<div class="image">
 							<?php $image = get_field('imagepanel'); ?>

@@ -2,14 +2,12 @@
   @include make-sm-column(12);
   @include make-md-column(6);
   @include make-lg-column(4);
-//  padding-left: rhythm(3);
 }
 
 .testeleven-carousel img {
   @include make-sm-column(12);
   @include make-md-column(6);
   @include make-lg-column(8);
-//  padding-right: rhythm(3);
 }
 
 .testeleven-carousel .image {
@@ -74,7 +72,18 @@
 @media (min-width: $screen-sm-min) {
   .testeleven-carousel {
     .text {
-      height: 213px;
+      height: 236px;
+      position: relative;
+      .wrap {
+        background: transparentize($brand-primary, 0.8);
+        position: absolute;
+
+        padding: $half-rhythm;
+        left: rhythm(3);
+        right: rhythm(3);
+        top: 0;
+        bottom: 0;
+      }
     }
     .carousel-inner .text, img {
       padding: 0 rhythm(3);
@@ -83,7 +92,7 @@
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .control-text-left,
     .carousel-control .control-text-right {
-      top: 65%;
+      top: 46%;
     }
   }
 }
@@ -94,6 +103,14 @@
   }
   .testeleven-carousel {
     .carousel-inner .text {
+      .wrap {
+        position: relative;
+        left: initial;
+        right: initial;
+        margin: 0;
+        padding: 0;
+        background: $body-bg;
+      }
       height: auto;
       padding-right: 15px;
     }
